@@ -19,8 +19,19 @@ embedding = OpenAIEmbeddings(
 # -------------------------
 # LOAD VECTORSTORE
 # -------------------------
+# vectorstore = FAISS.load_local(
+#     r"C:\Users\rahul\Desktop\PIB\merged_vector_store",
+#     embedding,
+#     allow_dangerous_deserialization=True
+# )
+
+import os
+
+BASE_DIR = os.path.dirname(__file__)
+
+
 vectorstore = FAISS.load_local(
-    r"C:\Users\rahul\Desktop\PIB\vector_store_new",
+    os.path.join(BASE_DIR, "vector_store_new"),
     embedding,
     allow_dangerous_deserialization=True
 )
@@ -38,9 +49,10 @@ retriever = vectorstore.as_retriever(
 # -------------------------
 # 🔥 TEST CODE (ONLY RUN WHEN FILE EXECUTED DIRECTLY)
 # -------------------------
+print("TOTAL VECTORS:", vectorstore.index.ntotal)
 if __name__ == "__main__":
     docs = retriever.invoke("trump epstein")
-
+    
     seen = set()
 
     for doc in docs:
