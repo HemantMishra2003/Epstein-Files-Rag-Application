@@ -7,3 +7,5 @@ merged_vector_store/
 *.pkl
 venv
 __pycache__
+!Pipeline/vector_store_new/index.faiss
+!Pipeline/vector_store_new/index.pkl
