@@ -1,5 +1,5 @@
-const API_URL = import.meta.env.VITE_API_URL;
-
+const API_URL = "http://13.60.192.66:8000";
+console.log("API_URL =", API_URL);
 const handlePayment = async (amount) => {
 
   try {
