@@ -32,8 +32,9 @@ function App() {
 };
 
 
-  const API_URL = import.meta.env.VITE_API_URL;
-  console.log("API_URL =", import.meta.env.VITE_API_URL);
+  // const API_URL = import.meta.env.VITE_API_URL;
+  // console.log("API_URL =", import.meta.env.VITE_API_URL);
+  const API_URL = "http://13.60.192.66:8000";
   const [showLimitPopup,setShowLimitPopup] = useState(false);
 
   const [showPremiumPopup,setShowPremiumPopup] = useState(false);
