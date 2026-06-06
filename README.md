@@ -1,4 +1,4 @@
-##  Public IP of AWS EC2 server = http://13.60.192.66:5173/ 
+###  Public IP Address of AWS EC2 server = http://13.60.192.66:5173/ 
 #####  Will be expired after 6 months : Free Tier hosting 
 
      click at this addres to see my  project at live 
