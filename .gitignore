@@ -9,3 +9,4 @@ venv
 __pycache__
 !Pipeline/vector_store_new/index.faiss
 !Pipeline/vector_store_new/index.pkl
+ragas_env

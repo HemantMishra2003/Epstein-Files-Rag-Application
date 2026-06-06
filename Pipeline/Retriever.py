@@ -46,8 +46,7 @@ retriever = vectorstore.as_retriever(
     }
 )
 
-# -------------------------
-# 🔥 TEST CODE (ONLY RUN WHEN FILE EXECUTED DIRECTLY)
+# --
 # -------------------------
 print("TOTAL VECTORS:", vectorstore.index.ntotal)
 if __name__ == "__main__":

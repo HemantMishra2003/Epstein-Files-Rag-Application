@@ -30,5 +30,5 @@ try:
         avg_mb_per_chunk = total_size / num_vectors
         print(f"Average size per chunk (approx): {avg_mb_per_chunk:.4f} MB")
 except Exception as e:
-    print("\nFAISS load nahi hua (error):", str(e))
-    print("Sirf folder size hi check hua hai upar.")
+    print("\nFAISS is not loaded:", str(e))
+    print("only project.")
